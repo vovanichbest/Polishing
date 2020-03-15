@@ -1,26 +1,13 @@
 
-body {
-  position: relative;
-  font-family: 'Playfair Display';
-}
+body {font-family: 'Playfair Display';}
 
-#ret{
-  display: none;
+header {
+        padding-bottom: 0px;
+        height: 30px;
 }
 
 #uter{
-  display: inline-flex;
-  width: 100%;
-}
-
-header {
-  position: absolute ;
-  top: 0px ;
-  left: 0px ;
-  height: 50px !important;
-  padding-bottom: 0px !important;
-  border-bottom: 1px double blue;
-  background: linear-gradient(to top, gold 20%, #F3FF89 60%, #E4AF9D 80%);
+  display: none;
 }
 
 nav{
@@ -28,14 +15,15 @@ nav{
   background: linear-gradient(to top, gold 20%, #F3FF89 60%, #E4AF9D 80%) !important;
 }
 
+.gradient{
+  height: 100vh;
+}
 
-
-.gradient{height: 100vh;}
 .foto{max-height: 100%;
       padding: 0px;
 }
-.main {padding-top: 50px;
-  /*max-width: 1700px;*/
+.main {
+  /*padding-top: 30px;*/
   height: 100%;
   background: linear-gradient(to right, #F6EFD2, #CEAD78);
   background-repeat: repeat;
@@ -43,26 +31,22 @@ nav{
 
 }
 
-@media(max-width: 2500px;){
-  .main{max-width: 2200;}
-}
-@media(max-width: 1500px;){
-  .main{max-width: 1200;}
-}
-@media(max-width: 1200px;){
-  .main{max-width:970px;}
-}
-@media(max-width: 992px;){
-  .main{max-width:750px;}
-}
 
+@media(max-width: 768px;){
+  .main{max-width:680px;}
+}
+@media(max-width: 540px;){
+  .main{max-width:360px;}
+}
 
 hr{border: 1px solid black;}
 nav{font-family: 'Lobster';
     }
+#nognicy{
+  max-width: 12%;
+}
 
-
-.logo{font-size: 20px;
+.logo{font-size: 12px;
       color: #BD056F;
       }
 
@@ -71,21 +55,36 @@ ul.navbar-nav{width: 100%;
 li>a{color: #BD056F;}
 li.nav-item{ width: 100%;
             text-align: center;}
-.opisanie>h2{font-size: 65px;
+.opisanie>h2{font-size: 15px;
               margin-top: 15%;
             margin-bottom: 10%;}
-.opisanie>.nete{font-size: 35px;
-                color: yellow;}
+.opisanie>.nete{
+  font-size: 12px;
+  color: black;
+}
+
 .opisanie>.net{
-  font-size: 25px;
-  margin-bottom: 20px;
+  margin: 0px;
+  font-size: 12px;
   color: brown;
 }
+
+
+
+.opisanie>.beauty{font-size: 12px;
+                  margin-top: 15%;
+                color: red; }
 .opisanie>p img{
-  max-width: 40px !important;
+  max-width: 25px !important;
+}
+
+#specialist{
+  max-width: 80%;
+  max-height: 80%;
+  padding-left: 5%;
 }
 .images{align-content: space-between;}
-img.process{max-width: 450px;
+img.process{max-width: 180px;
             max-height: 320px;
             padding: 1.2% 1%;
             justify-content: space-around;
@@ -105,30 +104,16 @@ img.process{max-width: 450px;
                                                 object-position: center;
                                                 top: 0;
                                                 left: 0;}
-#specialist{
-  max-width: 100%;
-  max-height: 100%;
-  padding-left: 10%;
-}
-.opisanie>.beauty{font-size: 37px;
-                  margin-top: 15%;
-                color: red; }
 
-.opisanie .mobile{
-  padding-top: 10%;
-  padding-bottom: 4%;
-}
 
-.contacts{
-  height: 100vh;
+.contacts{height: 100vh;}
 
-}
 
 /* Вся настройка бургера */
 .nav-wrapper {
 	width: 100%;
 	margin: 0 0 !important;
-	height: 50px;
+	height: 30px;
 	background-color: #EFF4E1;
 	position: absolute;
 	/*top: 100px;*/
@@ -140,13 +125,13 @@ img.process{max-width: 450px;
 }
 
 .nav-wrapper>nav{
-  max-height: 50px;
+  max-height: 30px;
   padding: 0;
 
 }
 
 .nav-wrapper ul {
-  width: 100%;
+  width: 50%;
   background-color: white;
 	margin: 0 auto;
 }
